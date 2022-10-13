@@ -10,9 +10,9 @@
 		A2FB6E5628F83B4500D3867A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FB6E5528F83B4500D3867A /* AppDelegate.swift */; };
 		A2FB6E5828F83B4500D3867A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FB6E5728F83B4500D3867A /* SceneDelegate.swift */; };
 		A2FB6E5A28F83B4500D3867A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FB6E5928F83B4500D3867A /* ViewController.swift */; };
-		A2FB6E5D28F83B4500D3867A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2FB6E5B28F83B4500D3867A /* Main.storyboard */; };
 		A2FB6E5F28F83B4600D3867A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2FB6E5E28F83B4600D3867A /* Assets.xcassets */; };
 		A2FB6E6228F83B4600D3867A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2FB6E6028F83B4600D3867A /* LaunchScreen.storyboard */; };
+		A2FB6E6B28F83CA800D3867A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A2FB6E6A28F83CA800D3867A /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,6 @@
 		A2FB6E5528F83B4500D3867A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2FB6E5728F83B4500D3867A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A2FB6E5928F83B4500D3867A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A2FB6E5C28F83B4500D3867A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2FB6E5E28F83B4600D3867A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2FB6E6128F83B4600D3867A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2FB6E6328F83B4600D3867A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2FB6E6B28F83CA800D3867A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,6 @@
 				A2FB6E5528F83B4500D3867A /* AppDelegate.swift */,
 				A2FB6E5728F83B4500D3867A /* SceneDelegate.swift */,
 				A2FB6E5928F83B4500D3867A /* ViewController.swift */,
-				A2FB6E5B28F83B4500D3867A /* Main.storyboard */,
 				A2FB6E5E28F83B4600D3867A /* Assets.xcassets */,
 				A2FB6E6028F83B4600D3867A /* LaunchScreen.storyboard */,
 				A2FB6E6328F83B4600D3867A /* Info.plist */,
@@ -83,6 +82,9 @@
 			dependencies = (
 			);
 			name = FoodDelivery;
+			packageProductDependencies = (
+				A2FB6E6A28F83CA800D3867A /* SnapKit */,
+			);
 			productName = FoodDelivery;
 			productReference = A2FB6E5228F83B4500D3867A /* FoodDelivery.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +113,9 @@
 				Base,
 			);
 			mainGroup = A2FB6E4928F83B4500D3867A;
+			packageReferences = (
+				A2FB6E6928F83CA800D3867A /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = A2FB6E5328F83B4500D3867A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +132,6 @@
 			files = (
 				A2FB6E6228F83B4600D3867A /* LaunchScreen.storyboard in Resources */,
 				A2FB6E5F28F83B4600D3867A /* Assets.xcassets in Resources */,
-				A2FB6E5D28F83B4500D3867A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +151,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A2FB6E5B28F83B4500D3867A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A2FB6E5C28F83B4500D3867A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A2FB6E6028F83B4600D3867A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +288,7 @@
 				INFOPLIST_FILE = FoodDelivery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +316,7 @@
 				INFOPLIST_FILE = FoodDelivery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A2FB6E6928F83CA800D3867A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A2FB6E6A28F83CA800D3867A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2FB6E6928F83CA800D3867A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A2FB6E4A28F83B4500D3867A /* Project object */;
 }
