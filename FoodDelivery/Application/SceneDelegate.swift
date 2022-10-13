@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let menuTabBarItemImage = #imageLiteral(resourceName: "menu-icon")
         let menuTabBarItem = UITabBarItem(title: "Меню", image: menuTabBarItemImage, tag: 0)
         
-        let vc = ViewController()
+        let vc = MenuViewController()
         vc.tabBarItem = menuTabBarItem
         
         tabBarController.viewControllers = [vc]

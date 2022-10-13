@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A2E859EC28F8986100D18DA7 /* DishTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E859EB28F8986100D18DA7 /* DishTableViewCell.swift */; };
 		A2FB6E5628F83B4500D3867A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FB6E5528F83B4500D3867A /* AppDelegate.swift */; };
 		A2FB6E5828F83B4500D3867A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FB6E5728F83B4500D3867A /* SceneDelegate.swift */; };
-		A2FB6E5A28F83B4500D3867A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FB6E5928F83B4500D3867A /* ViewController.swift */; };
+		A2FB6E5A28F83B4500D3867A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FB6E5928F83B4500D3867A /* MenuViewController.swift */; };
 		A2FB6E5F28F83B4600D3867A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2FB6E5E28F83B4600D3867A /* Assets.xcassets */; };
 		A2FB6E6228F83B4600D3867A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2FB6E6028F83B4600D3867A /* LaunchScreen.storyboard */; };
 		A2FB6E6B28F83CA800D3867A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A2FB6E6A28F83CA800D3867A /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A2E859EB28F8986100D18DA7 /* DishTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishTableViewCell.swift; sourceTree = "<group>"; };
 		A2FB6E5228F83B4500D3867A /* FoodDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2FB6E5528F83B4500D3867A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2FB6E5728F83B4500D3867A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A2FB6E5928F83B4500D3867A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A2FB6E5928F83B4500D3867A /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		A2FB6E5E28F83B4600D3867A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2FB6E6128F83B4600D3867A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2FB6E6328F83B4600D3867A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,14 +58,87 @@
 		A2FB6E5428F83B4500D3867A /* FoodDelivery */ = {
 			isa = PBXGroup;
 			children = (
+				A2FB6E6C28F83E5D00D3867A /* Application */,
+				A2FB6E6D28F83E6700D3867A /* Resources */,
+				A2FB6E6E28F83E7200D3867A /* Sources */,
+			);
+			path = FoodDelivery;
+			sourceTree = "<group>";
+		};
+		A2FB6E6C28F83E5D00D3867A /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				A2FB6E5528F83B4500D3867A /* AppDelegate.swift */,
 				A2FB6E5728F83B4500D3867A /* SceneDelegate.swift */,
-				A2FB6E5928F83B4500D3867A /* ViewController.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A2FB6E6D28F83E6700D3867A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				A2FB6E5E28F83B4600D3867A /* Assets.xcassets */,
 				A2FB6E6028F83B4600D3867A /* LaunchScreen.storyboard */,
 				A2FB6E6328F83B4600D3867A /* Info.plist */,
 			);
-			path = FoodDelivery;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A2FB6E6E28F83E7200D3867A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A2FB6E7228F83EC700D3867A /* Screens */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A2FB6E7228F83EC700D3867A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A2FB6E7328F83ED200D3867A /* Menu */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A2FB6E7328F83ED200D3867A /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				A2FB6E7428F83EDA00D3867A /* Model */,
+				A2FB6E7628F83EE200D3867A /* Presenter */,
+				A2FB6E7728F83EF400D3867A /* View */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		A2FB6E7428F83EDA00D3867A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A2FB6E7528F83EDE00D3867A /* View */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A2FB6E7528F83EDE00D3867A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A2FB6E7628F83EE200D3867A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A2FB6E7728F83EF400D3867A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A2FB6E5928F83B4500D3867A /* MenuViewController.swift */,
+				A2E859EB28F8986100D18DA7 /* DishTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +217,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2FB6E5A28F83B4500D3867A /* ViewController.swift in Sources */,
+				A2FB6E5A28F83B4500D3867A /* MenuViewController.swift in Sources */,
+				A2E859EC28F8986100D18DA7 /* DishTableViewCell.swift in Sources */,
 				A2FB6E5628F83B4500D3867A /* AppDelegate.swift in Sources */,
 				A2FB6E5828F83B4500D3867A /* SceneDelegate.swift in Sources */,
 			);
@@ -285,7 +361,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S75KQYF72G;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FoodDelivery/Info.plist;
+				INFOPLIST_FILE = FoodDelivery/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -313,7 +389,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S75KQYF72G;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FoodDelivery/Info.plist;
+				INFOPLIST_FILE = FoodDelivery/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
