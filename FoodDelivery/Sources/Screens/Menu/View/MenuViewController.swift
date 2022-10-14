@@ -19,6 +19,8 @@ final class MenuViewController: UIViewController {
         return tableView
     }()
     
+    private lazy var headerView = MenuHeaderView()
+    
     // MARK: - Life cycle
 
     override func viewDidLoad() {
@@ -28,7 +30,7 @@ final class MenuViewController: UIViewController {
     }
 }
 
-// MARK: - Private
+// MARK: - Private functions
 
 private extension MenuViewController {
     
@@ -36,12 +38,16 @@ private extension MenuViewController {
         
         view.backgroundColor = .systemBackground
         
+        view.addSubview(headerView)
         view.addSubview(tableView)
+        
+        headerView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 295)
         
         tableView.register(DishTableViewCell.self, forCellReuseIdentifier: DishTableViewCell.reuseIdentifier)
         
         tableView.snp.makeConstraints {
-            $0.edges.equalToSuperview()
+            $0.top.equalTo(headerView.snp.bottom)
+            $0.leading.bottom.trailing.equalToSuperview()
         }
     }
 }
