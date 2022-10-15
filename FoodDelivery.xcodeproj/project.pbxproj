@@ -45,6 +45,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A2CF971A28FB340300CF7980 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		A2FB6E4928F83B4500D3867A = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +100,7 @@
 		A2FB6E6E28F83E7200D3867A /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A2CF971A28FB340300CF7980 /* Services */,
 				A2FB6E7228F83EC700D3867A /* Screens */,
 			);
 			path = Sources;
@@ -119,16 +127,8 @@
 		A2FB6E7428F83EDA00D3867A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A2FB6E7528F83EDE00D3867A /* View */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		A2FB6E7528F83EDE00D3867A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		A2FB6E7628F83EE200D3867A /* Presenter */ = {
